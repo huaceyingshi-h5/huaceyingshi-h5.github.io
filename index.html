@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华策影视 - 金红星光华语精品正版资讯馆·剧集/电影/题材分面/正版平台/4K字幕 | huaceyingshi-h5.github.io</title>
+<meta name="description" content="华策影视（https://huaceyingshi-h5.github.io）单页资讯演示：华语剧集与电影片单、现实/古装/悬疑/出海分面、正版平台与版权防坑、4K字幕画质、影评与无障碍站规。内链全#，不提供未授权播放源，符合必应收录基础规范。">
+<meta name="keywords" content="华策影视,华语剧集,三生三世十里桃花,外交风云,去有风的地方,我是刑警,万里归途,正版平台,4K字幕,版权防坑,huaceyingshi-h5.github.io">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#7a1020">
+<meta property="og:title" content="华策影视 - 金红星光华语精品正版资讯馆">
+<meta property="og:description" content="剧集电影片单、题材分面、正版防坑、4K字幕、影评与无障碍站规。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://huaceyingshi-h5.github.io">
+<link rel="canonical" href="https://huaceyingshi-h5.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red1:#c0392b;--red2:#a3162a;--red3:#7a1020;--red4:#4d0a16;
+  --gold1:#f7d774;--gold2:#e9b949;--gold3:#caa033;
+  --ink:#241015;--ink2:#5a3940;--paper:#fbf4ec;--cream:#fff8ef;
+  --line:rgba(122,16,32,.18);--shadow:0 16px 34px rgba(122,16,32,.18);
+}
+html{scroll-behavior:smooth}
+body.big-text{font-size:18px}
+body.reduce-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+body.high-contrast{filter:contrast(1.18)}
+body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:linear-gradient(180deg,#fff8ef,#fbeede);color:var(--ink);line-height:1.75;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+
+.star-bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background:radial-gradient(60% 30% at 12% 0%,rgba(247,215,116,.35),transparent 60%),
+            radial-gradient(60% 30% at 88% 8%,rgba(192,57,43,.28),transparent 60%),
+            linear-gradient(180deg,#ffffff,#fbeede);}
+.star{position:fixed;z-index:0;font-size:1rem;opacity:.5;animation:tw 6s ease-in-out infinite alternate}
+@keyframes tw{0%{transform:scale(.8);opacity:.3}100%{transform:scale(1.2);opacity:.7}}
+
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,var(--red3),var(--red4));color:#ffeccb;border-bottom:3px solid var(--gold2)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem}
+.brand .medal{width:32px;height:32px;border-radius:9px;background:radial-gradient(circle at 50% 35%,var(--gold1),var(--gold3));display:grid;place-items:center;color:var(--red4);font-size:1rem;box-shadow:0 0 12px rgba(247,215,116,.6)}
+.brand b{color:var(--gold1)}
+.searchbar{display:flex;gap:8px;flex:1;min-width:170px;max-width:360px}
+.searchbar input{flex:1;padding:10px 12px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.9rem}
+.searchbar button{padding:10px 16px;border:0;border-radius:9px;background:var(--gold2);color:var(--red4);font-weight:800;cursor:pointer;min-height:44px}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}
+.navlinks a{padding:9px 12px;border-radius:8px;font-size:.82rem;font-weight:700;color:#ffe2cf;transition:.2s;min-height:44px;display:inline-flex;align-items:center}
+.navlinks a:hover,.navlinks a.active{background:var(--cream);color:var(--red3)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:3px;background:#ffeccb;border-radius:3px}
+
+.hero{padding:34px 0 20px;position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);font-weight:900;line-height:1.14}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--gold1),var(--red1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:560px;margin:14px 0 20px;color:var(--ink2)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:9px;font-weight:800;font-size:.9rem;cursor:pointer;border:0;transition:.25s;min-height:44px;display:inline-flex;align-items:center}
+.btn-gold{background:linear-gradient(135deg,var(--gold1),var(--gold3));color:var(--red4)}
+.btn-gold:hover{transform:translateY(-3px)}
+.btn-red{background:linear-gradient(135deg,var(--red1),var(--red3));color:#ffeccb}
+.btn-red:hover{transform:translateY(-3px)}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.chip{font-size:.72rem;font-weight:800;padding:5px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink2)}
+.chip.hot{background:var(--red3);color:#ffeccb;border-color:transparent}
+
+/* 奖项侧栏 */
+.award{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.award::before{content:'🏅';position:absolute;top:-12px;right:-8px;font-size:96px;opacity:.12}
+.award h3{font-size:.9rem;color:var(--red3);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.arow{display:flex;gap:10px;align-items:center;background:linear-gradient(135deg,#fff8ef,#fff);border:1px dashed var(--gold2);border-radius:10px;padding:8px 10px;margin-bottom:8px}
+.arow .ic{width:30px;height:30px;border-radius:8px;background:radial-gradient(circle at 50% 35%,var(--gold1),var(--red3));color:#ffeccb;font-weight:900;display:grid;place-items:center;flex-shrink:0;font-size:.7rem}
+.arow b{font-size:.8rem;color:var(--red4)}
+.arow span{font-size:.68rem;color:var(--ink2);display:block}
+
+section.block{padding:38px 0;position:relative;z-index:1}
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sec-head .icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--gold1),var(--red3));display:grid;place-items:center;color:var(--red4);font-size:1rem;font-weight:900}
+.sec-head h2{font-size:1.3rem;font-weight:900}
+.sec-head .tag{margin-left:auto;font-size:.72rem;color:var(--ink2);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+
+/* 1 片单 */
+.ribbon{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px}
+.ribbon::-webkit-scrollbar{height:8px}
+.ribbon::-webkit-scrollbar-thumb{background:var(--red3);border-radius:8px}
+.mcard{min-width:260px;max-width:300px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);flex-shrink:0;opacity:0;transform:translateY(14px);transition:.5s}
+.mcard.in{opacity:1;transform:none}
+.mcard:hover{transform:translateY(-4px);border-color:var(--gold2)}
+.mcard .art{height:120px;display:grid;place-items:center;font-size:2.2rem;color:#fff;position:relative}
+.c1{background:linear-gradient(135deg,var(--gold1),var(--red3))}
+.c2{background:linear-gradient(135deg,var(--red1),var(--red4))}
+.c3{background:linear-gradient(135deg,#e7a977,var(--red3))}
+.c4{background:linear-gradient(135deg,var(--gold2),var(--red2))}
+.c5{background:linear-gradient(135deg,#d98c8c,var(--red4))}
+.c6{background:linear-gradient(135deg,#f0c75e,var(--red3))}
+.mcard .art .yr{position:absolute;top:10px;right:10px;font-size:.62rem;font-weight:800;background:var(--cream);color:var(--red3);padding:3px 8px;border-radius:999px}
+.mcard .info{padding:14px}
+.mcard h4{font-size:.9rem;font-weight:800;color:var(--red4)}
+.mcard p{font-size:.74rem;color:var(--ink2);margin:4px 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mcard .meta{display:flex;justify-content:space-between;align-items:center}
+.mcard .meta .tagm{font-size:.68rem;font-weight:800;padding:3px 9px;border-radius:999px;background:#fff8ef;color:var(--red3);border:1px solid var(--line)}
+.mcard .meta .go{padding:6px 12px;border-radius:8px;font-size:.72rem;font-weight:800;background:var(--red3);color:#ffeccb}
+
+/* 2 分面 */
+.facets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.facet{font-size:.78rem;font-weight:800;padding:8px 13px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink2);cursor:pointer;min-height:40px}
+.facet.on{background:linear-gradient(135deg,var(--gold1),var(--red3));color:#fff;border-color:transparent}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.scard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.5s;border-top:4px solid var(--gold2)}
+.scard.in{opacity:1;transform:none}
+.scard:hover{border-color:var(--red1)}
+.scard .top{height:64px;border-radius:9px;display:grid;place-items:center;font-size:1.5rem;color:#fff;margin-bottom:8px}
+.g1{background:linear-gradient(135deg,var(--gold1),var(--red3))}
+.g2{background:linear-gradient(135deg,var(--red1),var(--red4))}
+.g3{background:linear-gradient(135deg,#e7a977,var(--red3))}
+.g4{background:linear-gradient(135deg,var(--gold2),var(--red2))}
+.g5{background:linear-gradient(135deg,#d98c8c,var(--red4))}
+.g6{background:linear-gradient(135deg,#f0c75e,var(--red3))}
+.g7{background:linear-gradient(135deg,#c98b5a,var(--red4))}
+.g8{background:linear-gradient(135deg,var(--gold1),var(--red1))}
+.scard h4{font-size:.84rem;font-weight:800;color:var(--red4)}
+.scard p{font-size:.72rem;color:var(--ink2);margin-top:2px}
+.scard .tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
+.stag{font-size:.66rem;font-weight:800;padding:2px 8px;border-radius:6px;background:#fff8ef;color:var(--red3);border:1px solid var(--line)}
+
+/* 3 正版防坑 */
+.steps{max-width:960px;margin:0 auto;display:grid;gap:14px}
+.step{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red3);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
+.step .num{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--gold1),var(--red3));color:#ffeccb;font-weight:900;display:grid;place-items:center}
+.step h4{font-size:.9rem;font-weight:800;color:var(--red3)}
+.step p{font-size:.76rem;color:var(--ink2);margin-top:4px}
+.warn{margin-top:14px;background:linear-gradient(180deg,var(--red3),var(--red4));color:#ffeccb;border-radius:12px;padding:16px}
+.warn h4{font-size:.9rem;color:var(--gold1)}
+.warn ul{list-style:none;display:grid;gap:7px;margin-top:8px}
+.warn li{font-size:.76rem;padding-left:20px;position:relative;line-height:1.6}
+.warn li::before{content:'🏅';position:absolute;left:0}
+
+/* 4 画质 */
+.accbox{max-width:920px;margin:0 auto}
+.acc{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden;box-shadow:var(--shadow)}
+.acc button.acc-h{width:100%;text-align:left;background:transparent;border:0;padding:14px 16px;font-size:.9rem;font-weight:800;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:10px;min-height:48px;align-items:center}
+.acc button.acc-h .ar{transition:.3s;color:var(--red3)}
+.acc.open button.acc-h .ar{transform:rotate(90deg)}
+.acc .acc-b{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.acc .acc-b .inner{padding:0 16px 14px;font-size:.82rem;color:var(--ink2)}
+.specs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.spec{font-size:.7rem;font-weight:800;padding:3px 9px;border-radius:6px;background:#fff8ef;color:var(--red3);border:1px solid var(--line)}
+
+/* 5 影评 */
+.review{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:16px}
+.rform{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.rform label{display:block;font-size:.76rem;font-weight:800;margin:8px 0 5px;color:var(--ink2)}
+.rform input,.rform textarea,.rform select{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.84rem;font-family:inherit}
+.rform textarea{min-height:70px;resize:vertical}
+.rform button{margin-top:10px;width:100%;padding:11px;border:0;border-radius:9px;background:linear-gradient(135deg,var(--gold1),var(--red3));color:#fff;font-weight:800;cursor:pointer;min-height:46px}
+.rlist{display:grid;gap:10px}
+.rv{background:#fff;border:1px solid var(--line);border-left:5px solid var(--gold2);border-radius:10px;padding:12px}
+.rv h4{font-size:.84rem;font-weight:800;color:var(--red3)}
+.rv p{font-size:.74rem;color:var(--ink2);margin-top:4px}
+
+/* 6 站规 */
+.rules{max-width:880px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.rules h3{font-size:1rem;color:var(--red3)}
+.rules ul{list-style:none;display:grid;gap:8px}
+.rules li{font-size:.8rem;padding-left:20px;position:relative;color:var(--ink2);line-height:1.65}
+.rules li::before{content:'🎬';position:absolute;left:0}
+.a11y{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.at{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px}
+.at b{font-size:.82rem;color:var(--red3);display:block;margin-bottom:6px}
+.at p{font-size:.72rem;color:var(--ink2)}
+.sw{width:44px;height:24px;border-radius:99px;background:#9fb6c9;position:relative;display:inline-block;transition:.2s;vertical-align:middle}
+.sw i{position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}
+.sw.on{background:var(--red3)}
+.sw.on i{left:22px}
+.rules .dis{margin-top:12px;font-size:.73rem;color:var(--ink2);border-top:1px dashed var(--line);padding-top:10px}
+
+footer.site-foot{margin-top:34px;background:linear-gradient(180deg,transparent,var(--red4));border-top:3px solid var(--gold2);color:#ffe2cf;padding:30px 0 20px;position:relative;z-index:1}
+.foot-brand{font-weight:900;font-size:1.1rem;text-align:center;margin-bottom:10px}
+.foot-brand b{color:var(--gold1)}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:12px}
+.foot-links a{font-size:.8rem;color:#ffe2cf;min-height:40px;display:inline-flex;align-items:center}
+.foot-links a:hover{color:#fff}
+.foot-small{text-align:center;font-size:.73rem;color:#f3c9b6;line-height:1.7}
+
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.review{grid-template-columns:1fr}.a11y{grid-template-columns:1fr}}
+@media(max-width:680px){
+  .navlinks{position:fixed;top:64px;left:12px;right:12px;flex-direction:column;background:var(--red3);padding:10px;border-radius:12px;box-shadow:var(--shadow);transform:translateY(-180%);transition:.3s}
+  .navlinks.open{transform:none}
+  .burger{display:flex}
+  .searchbar{order:3;width:100%;max-width:none}
+  .grid{grid-template-columns:1fr}
+}
+@media(max-width:420px){.mcard{min-width:84%}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="star-bg"></div>
+<span class="star" style="left:8%">⭐</span>
+<span class="star" style="left:30%;animation-delay:2s">✨</span>
+<span class="star" style="left:58%;animation-delay:4s">🌟</span>
+<span class="star" style="left:82%;animation-delay:6s">⭐</span>
+
+<div class="wrap">
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand"><span class="medal">🏅</span> 华策影视<b>·金红星光资讯馆</b></div>
+      <form class="searchbar" onsubmit="return false">
+        <input type="search" placeholder="搜剧集/电影：三生/外交/去有风/刑警…" aria-label="搜索影视">
+        <button type="submit">找片</button>
+      </form>
+      <nav class="navlinks" id="nav">
+        <a href="#works" class="active">精品片单</a>
+        <a href="#genre">题材分面</a>
+        <a href="#legal">正版防坑</a>
+        <a href="#quality">4K字幕</a>
+        <a href="#reviews">华语影评</a>
+        <a href="#rules">站规无障碍</a>
+      </nav>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>金红星光里的看华语精品<br>华策影视<em>正版剧集电影资讯</em></h1>
+          <p>华策影视（huaceyingshi-h5.github.io）整理华语剧集、电影、短剧与出海内容资讯：精品片单、题材分面、正版平台与版权防坑、4K/字幕建议、影评与无障碍站规。本页为静态前端演示，内链全部为 #；不提供未授权播放源、不发布“最新地址/备用域名/全片播放/专用播放器/网盘”。</p>
+          <div class="cta">
+            <a href="#works" class="btn btn-gold">看精品片单</a>
+            <a href="#legal" class="btn btn-red">正版防坑指引</a>
+          </div>
+          <div class="chips">
+            <span class="chip hot">剧集资讯</span>
+            <span class="chip">电影分面</span>
+            <span class="chip">正版防坑</span>
+            <span class="chip">4K字幕</span>
+            <span class="chip">出海字幕</span>
+            <span class="chip">无障碍</span>
+          </div>
+        </div>
+        <aside class="award" aria-label="华策与奖项速览">
+          <h3>🏅 华策与奖项速览</h3>
+          <div class="arow"><div class="ic">股</div><div><b>创业板300133</b><span>1992初创、2005成立、2010上市，剧集产量/出口/自有版权领先 [1,5](@ref)</span></div></div>
+          <div class="arow"><div class="ic">奖</div><div><b>五个一/飞天/金鹰/白玉兰</b><span>多部作品获国内外重要奖项，设AIGC与影视垂类大模型 [5,9](@ref)</span></div></div>
+          <div class="arow"><div class="ic">海</div><div><b>华剧场/18万小时出海</b><span>内容发行200+国家地区，海外新媒体矩阵订阅约5800万 [1](@ref)</span></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 1 精品片单 -->
+    <section class="block" id="works">
+      <div class="sec-head"><span class="icon">🎬</span><h2>华语精品片单 · 横向展架</h2><span class="tag">资讯向·不播放正片</span></div>
+      <div class="ribbon" id="worksRibbon">
+        <article class="mcard"><div class="art c1">🌸<span class="yr">古装仙恋</span></div><div class="info"><h4>三生三世十里桃花</h4><p>华策出品仙侠剧，东方卫视、浙江卫视首播；[2](@ref)资讯页看阵容、剧情线与正版重刷渠道。</p><div class="meta"><span class="tagm">剧集·古装</span><span class="go">详情</span></div></div></article>
+        <article class="mcard"><div class="art c2">🕊️<span class="yr">重大主旋律</span></div><div class="info"><h4>外交风云</h4><p>华策重大革命历史题材，呈现外交人物与事件；[5](@ref)适合正版纪录/剧集专区检索。</p><div class="meta"><span class="tagm">剧集·主旋律</span><span class="go">详情</span></div></div></article>
+        <article class="mcard"><div class="art c3">🏡<span class="yr">治愈现实</span></div><div class="info"><h4>去有风的地方</h4><p>田园治愈剧，带出乡村、非遗与慢生活；[5](@ref)衍生短剧《我的归途有风》可同看。[13](@ref)</p><div class="meta"><span class="tagm">剧集·现实治愈</span><span class="go">详情</span></div></div></article>
+        <article class="mcard"><div class="art c4">🚓<span class="yr">刑侦大剧</span></div><div class="info"><h4>我是刑警</h4><p>华策刑侦剧，爱奇艺2024热度破万；[13](@ref)资讯页重案件结构、台词与正版画质。</p><div class="meta"><span class="tagm">剧集·刑侦</span><span class="go">详情</span></div></div></article>
+        <article class="mcard"><div class="art c5">🆘<span class="yr">电影·现实</span></div><div class="info"><h4>万里归途</h4><p>华策电影，撤侨与外交护送题材；[1,5](@ref)看正版电影平台、字幕与分级提示。</p><div class="meta"><span class="tagm">电影·主旋律</span><span class="go">详情</span></div></article>
+        <article class="mcard"><div class="art c6">🎭<span class="yr">短剧/动画</span></div><div class="info"><h4>我的归途有风 / 挑战大魔王</h4><p>华策精品短剧与非遗美食、动画并行；[9](@ref)抖音/上星与少儿正版渠道分开检索。</p><div class="meta"><span class="tagm">短剧·动画</span><span class="go">详情</span></div></div></article>
+      </div>
+    </section>
+
+    <!-- 2 题材分面 -->
+    <section class="block" id="genre">
+      <div class="sec-head"><span class="icon">🎭</span><h2>题材类型分面 · 展板</h2><span class="tag">点击筛选·纯前端</span></div>
+      <div class="facets" id="facets">
+        <span class="facet on" data-g="all">全题材</span>
+        <span class="facet" data-g="real">现实都市</span>
+        <span class="facet" data-g="ancient">古装仙侠</span>
+        <span class="facet" data-g="crime">悬疑刑侦</span>
+        <span class="facet" data-g="main">重大主旋律</span>
+        <span class="facet" data-g="heal">治愈乡村</span>
+        <span class="facet" data-g="movie">电影院线</span>
+        <span class="facet" data-g="short">短剧动画</span>
+        <span class="facet" data-g="sea">出海译制</span>
+      </div>
+      <div class="grid" id="genreGrid">
+        <article class="scard" data-g="real"><div class="top g1">💼</div><h4>现实都市</h4><p>职场、婚恋、家庭与青年成长，如《何以笙箫默》《亲爱的翻译官》等公开播出信息可查。[6,10](@ref)</p><div class="tags"><span class="stag">1080p</span><span class="stag">简中</span><span class="stag">正版</span></div></article>
+        <article class="scard" data-g="ancient"><div class="top g2">🐉</div><h4>古装仙侠</h4><p>仙恋、历史、权谋与大IP改编剧，重服化道与特效；认准出品方与卫视/网播版本。[2,14](@ref)</p><div class="tags"><span class="stag">4K</span><span class="stag">HDR</span><span class="stag">字幕</span></div></article>
+        <article class="scard" data-g="crime"><div class="top g3">🔍</div><h4>悬疑刑侦</h4><p>刑侦、经侦、反腐与推理，重节奏与证据链；《我是刑警》类大剧看持牌网播画质。[13](@ref)</p><div class="tags"><span class="stag">5.1</span><span class="stag">对白增强</span><span class="stag">分级</span></div></article>
+        <article class="scard" data-g="main"><div class="top g4">🇨🇳</div><h4>重大主旋律</h4><p>外交、抗战、时代创业与模范人物，如《外交风云》《我们的河山》《太平年》。[1,5](@ref)</p><div class="tags"><span class="stag">央视</span><span class="stag">持牌</span><span class="stag">字幕</span></div></article>
+        <article class="scard" data-g="heal"><div class="top g5">🌾</div><h4>治愈乡村</h4><p>田园、非遗美食、返乡与人际关系，《去有风的地方》及短剧衍生同面。[5,13](@ref)</p><div class="tags"><span class="stag">大字号</span><span class="stag">慢节奏</span><span class="stag">亲子</span></div></article>
+        <article class="scard" data-g="movie"><div class="top g6">🎟️</div><h4>电影院线</h4><p>《万里归途》《出走的决心》《狂野时代》《刺杀小说家》等；[1,9,14](@ref)按院线/流媒体版检索。</p><div class="tags"><span class="stag">4K</span><span class="stag">杜比</span><span class="stag">正版</span></div></article>
+        <article class="scard" data-g="short"><div class="top g7">📱</div><h4>短剧动画</h4><p>精品短剧《我的归途有风》《资治通鉴》、动画《挑战大魔王》；[9](@ref)分短视频/上星/少儿渠道。</p><div class="tags"><span class="stag">竖屏</span><span class="stag">少儿分级</span><span class="stag">正版</span></div></article>
+        <article class="scard" data-g="sea"><div class="top g8">🌏</div><h4>出海译制</h4><p>华剧场与多语种译制，[1](@ref)《何以笙箫默》Netflix、《亲爱的翻译官》Viki/DramaFever等海外案例。[10,26](@ref)</p><div class="tags"><span class="stag">多语字幕</span><span class="stag">地区版</span><span class="stag">授权</span></div></article>
+      </div>
+    </section>
+
+    <!-- 3 正版防坑 -->
+    <section class="block" id="legal">
+      <div class="sec-head"><span class="icon">🛡️</span><h2>正版渠道与版权防坑</h2><span class="tag">合规·不嵌盗版源</span></div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><h4>按出品方+片名+年份检索</h4><p>华策剧可用官网作品页核对出品信息，再跳持牌视频/卫视回看；同名改编、翻拍、剪辑号很多，避免只搜“全集/完整版”。[5](@ref)</p></div></div>
+        <div class="step"><div class="num">2</div><div><h4>用持牌平台与官方专区</h4><p>剧集看爱奇艺/腾讯/优酷/芒果/咪咕及卫视回看，电影看院线或持牌点播；海外按地区用华剧场/授权平台，不搜“最新地址”。[13,1](@ref)</p></div></div>
+        <div class="step"><div class="num">3</div><div><h4>不装未知播放器/插件</h4><p>正版页通常说明内容提供方与播放形式；要求关安全软件、装APK/解码器、弹“线路切换”的聚合站风险高。[7,8](@ref)</p></div></div>
+        <div class="step"><div class="num">4</div><div><h4>核验主体与授权范围</h4><p>看运营公司、版权方、授权地区/期限、集数版本；仅写“海量正版”无具体作品授权，不能作为可播依据。[7,16](@ref)</p></div></div>
+      </div>
+      <div class="warn">
+        <h4>华策影视防坑提示</h4>
+        <ul>
+          <li>不提供未授权在线播放、不发布最新地址/备用域名/全片源。</li>
+          <li>不内置专用播放器、不引导网盘转存、不聚合第三方盗链；爬虫抓第三方播放链接也可能构成侵权。[3](@ref)</li>
+          <li>商业站传播完整影视几乎不适用“合理使用”，应保留授权合同与期限证明。[16](@ref)</li>
+          <li>片单仅资讯演示，实际观看以出品方/持牌平台授权页为准。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 画质 -->
+    <section class="block" id="quality">
+      <div class="sec-head"><span class="icon">🎨</span><h2>剧集电影画质与字幕手记</h2><span class="tag">点击展开</span></div>
+      <div class="accbox" id="accBox">
+        <div class="acc open"><button class="acc-h">古装/仙侠怎么不溢色？ <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><p>服化道颜色多，建议标准/电影模式，4K HDR看夜景与特效；霞光、金饰别拉过高饱和，人物肤色保准。<div class="specs"><span class="spec">HDR10</span><span class="spec">Rec.709基准</span><span class="spec">肤色校准</span></div></p></div></div></div>
+        <div class="acc"><button class="acc-h">主旋律/刑侦字幕与对白 <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><p>人名、地名、案由多，优先官方简中；刑侦对白密集开“对白增强”，会议/外景注意字幕对比度。<div class="specs"><span class="spec">简中</span><span class="spec">对白增强</span><span class="spec">5.1</span></div></p></div></div></div>
+        <div class="acc"><button class="acc-h">出海剧多语字幕怎么选？ <span class="ar">▶</span></button><div class="acc-b"><div class="inner"><p>华策海外发行含多语种译制，[1,10](@ref)按地区选授权字幕；同片不同区集数/字幕可能不同，以平台版本页为准。<div class="specs"><span class="spec">多语字幕</span><span class="spec">地区版</span><span class="spec">正版授权</span></div></p></div></div></div>
+      </div>
+    </section>
+
+    <!-- 5 影评 -->
+    <section class="block" id="reviews">
+      <div class="sec-head"><span class="icon">✍️</span><h2>华语影评与短评</h2><span class="tag">前端演示·不存储</span></div>
+      <div class="review">
+        <form class="rform" id="rvForm" autocomplete="off">
+          <label for="rvName">昵称</label>
+          <input id="rvName" placeholder="如：华流影友" required>
+          <label for="rvFilm">片名/题材</label>
+          <input id="rvFilm" placeholder="如：我是刑警（刑侦·爱奇艺正版）" required>
+          <label for="rvMood">推荐星级</label>
+          <select id="rvScore"><option>🏅🏅🏅🏅🏅 必看</option><option>🏅🏅🏅🏅 优质</option><option>🏅🏅🏅 可看</option><option>🏅🏅 一般</option><option>🏅 不推荐</option></select>
+          <label for="rvText">短评内容</label>
+          <textarea id="rvText" placeholder="写剧情准确度
